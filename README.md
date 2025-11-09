@@ -69,7 +69,7 @@ $env:CXX = "clang++"; ./scripts/build.ps1
 - Nếu muốn thêm admin mới: mở file và thêm dòng mới.
 
 
-## 7. Troubleshooting (Sự cố thường gặp)
+## 6. Troubleshooting (Sự cố thường gặp)
 | Vấn đề | Nguyên nhân | Cách xử lý |
 |--------|-------------|-----------|
 | `make: g++: command not found` | Chưa cài gcc hoặc PATH chưa thêm `ucrt64/bin` | Cài `gcc`, thiết lập PATH như phần thủ công |
@@ -78,7 +78,7 @@ $env:CXX = "clang++"; ./scripts/build.ps1
 | Clean báo lỗi `rm` | Thiếu coreutils trong PATH | Thêm `C:\msys64\usr\bin` vào PATH |
 
 
-## 9. Licence
+## 7. Licence
 Hiện chưa khai báo. Nên thêm (ví dụ MIT) nếu public repo.
 
 ---
