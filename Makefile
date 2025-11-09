@@ -3,8 +3,9 @@
 .PHONY: all run clean
 
 CXX := g++
-MKDIR := /usr/bin/mkdir
-RM := /usr/bin/rm
+# Allow overriding from environment, avoid hardcoded paths
+MKDIR ?= mkdir
+RM ?= rm
 
 CXXFLAGS := -std=c++17 -Wall -I./src -I./src/managers -I./src/menu -I./src/models -I./src/utils
 
@@ -22,4 +23,4 @@ run: all
 	./$(TARGET)
 
 clean:
-	$(RM) -f $(TARGET)
+	-$(RM) -f $(TARGET)
