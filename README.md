@@ -1,3 +1,4 @@
+# Câu lệnh github
 git init : tạo file ẩn git chứa tất cả lịch sử commit,... trên máy
 git remote add origin https://github.com/anhtus-304/CTDL.git : kết nối với repon
 git clone origin https://github.com/anhtus-304/CTDL.git : clone code từ repon về máy
