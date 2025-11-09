@@ -1,14 +1,14 @@
 # Câu lệnh github
-git init : tạo file ẩn git chứa tất cả lịch sử commit,... trên máy
-git remote add origin https://github.com/anhtus-304/CTDL.git : kết nối với repon
-git clone origin https://github.com/anhtus-304/CTDL.git : clone code từ repon về máy
-git fetch origin : cập nhật tất cả các nhánh trên repon
-git branch -a : liệt kê các nhánh trên máy
-git switch -c <tên nhánh> : tạo nhánh và chuyển sang nhánh mới
-git switch <tên nhánh> : chuyển nhánh
-git add . & git commit -m "nội dung cập nhật" : chọn toàn bộ file đã thay đổi và lưu lại chúng vào một mốc lịch sử mới với lời nhắn mô tả
-git pull : cập nhật mọi thứ từ nhánh đang đứng trên máy
-git push origin <tên nhánh> / git push : đẩy tất cả đã làm trên máy lên nhánh đang đứng trên repon
+- git init : tạo file ẩn git chứa tất cả lịch sử commit,... trên máy
+- git remote add origin https://github.com/anhtus-304/CTDL.git : kết nối với repon
+- git clone origin https://github.com/anhtus-304/CTDL.git : clone code từ repon về máy
+- git fetch origin : cập nhật tất cả các nhánh trên repon
+- git branch -a : liệt kê các nhánh trên máy
+- git switch -c <tên nhánh> : tạo nhánh và chuyển sang nhánh mới
+- git switch <tên nhánh> : chuyển nhánh
+- git add . & git commit -m "nội dung cập nhật" : chọn toàn bộ file đã thay đổi và lưu lại chúng vào một mốc lịch sử mới với lời nhắn mô tả
+- git pull : cập nhật mọi thứ từ nhánh đang đứng trên máy
+- git push origin <tên nhánh> / git push : đẩy tất cả đã làm trên máy lên nhánh đang đứng trên repon
 
 # CTDL – Dự án quản lý thư viện (C++17)
 
