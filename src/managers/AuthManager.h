@@ -11,9 +11,12 @@ private:
     vector<Admin> admins;
     string dataFile = "data/Admin.txt";
 
+    bool usernameExists(const string &u);
+
 public:
     bool loadAdmins();
     bool login();
+    bool registerUser(); // Đăng ký tài khoản mới (user, password, xác nhận)
 };
 
 #endif

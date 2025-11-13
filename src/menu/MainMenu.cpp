@@ -1,12 +1,13 @@
 #include "MainMenu.h"
-#include "../managers/AuthManager.h"
+#include "AuthMenu.h"
+#include "ReaderMenu.h"
 #include "../utils/color_utils.h"
 #include <iostream>
 using namespace std;
 
 void MainMenu::show() {
-    AuthManager auth;
-    if (!auth.login()) return;  // Nếu đăng nhập sai 3 lần thì thoát
+    AuthMenu authMenu;
+    if (!authMenu.show()) return; // Thoát nếu người dùng không đăng nhập
 
     int choice;
     do {
@@ -26,9 +27,11 @@ void MainMenu::show() {
             case 1:
                 cout << "[TBD] Gọi menu Sach ở đây...\n";
                 break;
-            case 2:
-                cout << "[TBD] Gọi menu BanDoc ở đây...\n";
+            case 2: {
+                ReaderMenu rm;
+                rm.show();
                 break;
+            }
             case 3:
                 cout << "[TBD] Gọi menu PhieuMuon ở đây...\n";
                 break;
