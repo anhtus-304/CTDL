@@ -1,4 +1,5 @@
 #include "MainMenu.h"
+#include "BookMenu.h"
 #include "AuthMenu.h"
 #include "ReaderMenu.h"
 #include "../utils/color_utils.h"
@@ -25,7 +26,8 @@ void MainMenu::show() {
 
         switch (choice) {
             case 1:
-                cout << "[TBD] Gọi menu Sach ở đây...\n";
+                BookMenu bookMenu;
+                bookMenu.show();
                 break;
             case 2: {
                 ReaderMenu rm;
